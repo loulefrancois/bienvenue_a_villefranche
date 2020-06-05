@@ -1,0 +1,254 @@
+/* /////////////////////////////////////// */
+/* /////////////// GENERAL /////////////// */
+/* /////////////////////////////////////// */
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One', sans-serif;
+    color: white;
+}
+
+/* /////////////////////////////////////// */
+/* //////////////// FONTS //////////////// */
+/* /////////////////////////////////////// */
+
+@font-face {
+    font-family: 'Sprat-RegularBold';
+    src: url("fonts/Sprat-type-master/Sprat-RegularBold.otf");
+}
+
+@font-face {
+    font-family: 'Sprat-Regular';
+    src: url("fonts/Sprat-type-master/Sprat-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Sprat-RegularMedium';
+    src: url("fonts/Sprat-type-master/Sprat-RegularMedium.otf");
+}
+
+/* //////////////////////////////////////// */
+/* //////////////// HEADER //////////////// */
+/* //////////////////////////////////////// */
+
+header {
+    position: fixed;
+    right: 0.8em;
+    top: 0.6em;
+    /*width: 36em;*/
+    width: 20em;
+}
+
+h1,
+h2 {
+    margin: 0;
+    font-weight: 50;
+}
+
+h1 {
+    font-size: 2.1em;
+}
+
+h2 {
+    font-size: 1.05em;
+    padding-bottom: 0.4em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1:hover {
+    color: #f4d556;
+}
+
+#participe {
+    width: 10.5em;
+    z-index: 900;
+    padding: 0.6em;
+    border: 1px solid;
+}
+
+#participe p {
+    margin: 0;
+}
+
+#participe:hover {
+    background-color: #f4d556;
+    cursor: pointer;
+}
+
+#intro {
+    margin-top: 1.3em;
+    font-family: 'Sprat-RegularMedium';
+}
+
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+
+#participeinfos {
+    display: none;
+    position: fixed;
+    padding: 2em;
+    width: 42%;
+    height: 35%;
+    top: 32.5%;
+    left: 29%;
+    color: black;
+    background-color: #f4d556;
+}
+
+#croixparticipe {
+    margin-top: 0;
+    margin-bottom: 1em;
+    float: right;
+}
+
+#croixparticipe:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#texteparticipe {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    line-height: 1.4em;
+    font-family: 'Sprat-RegularMedium';
+}
+
+
+#boutons {
+    text-align: center;
+}
+
+
+#go,
+#aide {
+    padding: 0.6em;
+    width: 4em;
+    border: 1px solid;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 6.8em;
+}
+
+#aide {
+    width: 15.5em;
+}
+
+#go p,
+#aide p {
+    margin: 0;
+    color: black;
+}
+
+#go:hover,
+#aide:hover {
+    background-color: white;
+    color: #f4d556;
+    cursor: pointer;
+}
+
+#go:hover p,
+#aide:hover p {
+    color: #f4d556;
+}
+
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* Comment contribuer */
+
+#commentcontribuer {
+    display: none;
+    overflow-y: scroll;
+    position: fixed;
+    padding: 2em;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    color: black;
+    background-color: #f4d556;
+    font-family: 'Sprat-RegularMedium';
+}
+
+#commentcontribuer p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: inline;
+    float: left;
+    position: relative;
+    width: 390px;
+    left: 55px;
+}
+
+#commentcontribuer p.premier,
+#commentcontribuer p.fermertexte {
+    left: 0;
+    width: 335px;
+}
+
+#commentcontribuer p.lignecentpourcent {
+    left: 0;
+    width: 100%;
+}
+
+#commentcontribuer img {
+    width: 30px;
+    margin-right: 25px;
+    display: inline;
+    float: left;
+    position: relative;
+}
+
+#commentcontribuer img.fermer {
+    width: 45px;
+    margin-right: 10px;
+}
+
+#fermercommentcontribuer p {
+    width: 10px;
+}
+
+h3 {
+    display: inline;
+    float: left;
+    position: relative;
+    font-family: 'Sprat-RegularBold';
+    width: 100%;
+    font-weight: 100;
+    font-size: 1.05em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+/* /////////////////////////////////////// */
+/* //////////////// MEDIA //////////////// */
+/* /////////////////////////////////////// */
+
+@media screen and (max-width: 1300px) {
+    #participeinfos {
+        padding: 2em;
+        width: 45%;
+        height: 45%;
+        top: 27.5%;
+        left: 27.5%;
+        color: black;
+        background-color: #f4d556;
+    }
+
+    #go,
+    #aide {
+        margin-left: 4em;
+    }
+
+}

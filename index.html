@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<meta charset="utf-8" />
+
+
+<head>
+
+    <!-- Ce qui est écris sur l'onglet : -->
+    <title>Bienvenue à Villefranche !</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <!--<link rel="stylesheet" href="css/grid_gruimier.css" />-->
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <!-- JAVASCRIPT/QUERY -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+    <script>
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html">
+            <h1>Bienvenue à Villefranche !</h1>
+        </a>
+        <h2>Carte participative à l’usage des nouveaux habitants</h2>
+
+
+
+        <p id="intro">Cette carte a pour but d’aider les nouveaux habitants de Villefranche-de-Lauragais a trouver des informations qui ne se trouvent pas sur Google Maps. Ce sont ceux qui connaissent le mieux Villefranche qui contribuent : les habitants !</p>
+
+        <div id="participe">
+            <p> > Je participe !</p>
+        </div>
+
+    </header>
+
+    <div id="participeinfos">
+
+        <p id="croixparticipe">X</p>
+
+        <p id="texteparticipe">Avant de contribuer à la carte, quelques informations : le but est d'ajouter des points et/ou des tracés de choses que l'on ne peux pas trouver sur internet. Par exemple, il est facile de savoir où sont les boulangeries, mais seul un habitant de Villefranche sait où trouver la meilleur chocolatine... Ajoutez donc seulement des choses que vous seul pouvait savoir !</p>
+
+        <div id="boutons">
+
+            <div id="go">
+                <a target="_blank" href="http://u.osmfr.org/m/466428/">
+                    <p>Go !</p>
+                </a>
+            </div>
+
+            <div id="aide">
+                    <p>Aide à la contribution</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- /////////////////////////////// -->
+
+    <div id="commentcontribuer">
+
+        <p class="lignecentpourcent" style="margin-bottom: 20px;">En appuyant sur le bouton "Go !" vous ouvrirez une nouvelle page qui permettra d'éditer la carte.</p>
+
+        <img src="images/01.png">
+        <p class="premier">En haut à droite, cliquez sur un bouton carré avec un crayon qui permet d'activer le mode édition.</p>
+        
+        <h3>Pour ajouter un marqueur :</h3>
+        <img src="images/02.png">
+        <p class="premier">Cliquez sur ce bouton puis cliquer à l'endroit où vous souhaitez le mettre sur la carte.</p>
+        <p>Sélectionnez le calque de l'élément "Marqueurs".</p>
+        <p>Donnez-lui un nom (obligatoire) et une description (optionnel).</p>
+        <p>Vous pouvez changer l'image à l'interieur de la goutte en cliquant sur "Propriété de la forme" et image de l'icône > "définir"</p>
+        <img src="images/04.png" class="fermer">
+        <p class="fermertexte">Puis cliquez sur "fermer".</p>
+        
+        <h3>Pour ajouter un tracé :</h3>
+        <img src="images/03.png">
+        <p class="premier">Cliquez sur ce bouton puis cliquer à l'endroit où vous souhaitez mettre le premier point.</p>
+        <p>Dessinez votre tracés de points en points.</p>
+        <p>Lorsqu'il est fini cliquez sur le dernier point que vous avez mis.</p>
+        <p>Séléctionnez le calque "Tracés".</p>
+        <p>Donnez-lui un nom (obligatoire) et une description (optionnel).</p>
+        <img src="images/04.png" class="fermer">
+        <p class="fermertexte">Puis cliquez sur "fermer".</p>
+        
+        <h3>Pour enregistrer ses modifications :</h3>
+        <img src="images/10.png" style="width: 100px;">
+        <p class="lignecentpourcent">Cliquez sur ce bouton.</p>
+        <p></p>
+        
+        <h3>Pour modifier ou supprimer un élément :</h3>
+        <p class="lignecentpourcent">Cliquer une fois sur l'élément à modifier puis :</p>
+        <img src="images/06.png">
+        <p class="premier">Pour modifier le nom ou la description.</p>
+        <img src="images/05.png">
+        <p class="premier">Pour supprimer.</p>
+            
+
+    </div>
+
+
+
+
+    <iframe width="100%" height="100%" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/bienvenue-a-villefranche_466428?scaleControl=true&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=false&searchControl=true&tilelayersControl=true&embedControl=false&datalayersControl=true&onLoadPanel=none&captionBar=false&fullscreenControl=false&locateControl=true&measureControl=false&editinosmControl=false"></iframe>
+
+
+
+</body>
+
+<script>
+    // Taille height et width de l'écran
+    var ecranHeight = $(window).height();
+    var ecranWidth = $(window).width();
+
+    $("body").css("height", ecranHeight);
+
+    // Affichage participeinfos
+    $("#participe").on('click', function() {
+        $("#participeinfos").css("display", "block");
+    });
+
+    $("#croixparticipe").on('click', function() {
+        $("#participeinfos").css("display", "none");
+    });
+    
+    // Affichage comment contribuer
+    $("#aide").on('click', function() {
+        $("#commentcontribuer").css("display", "block");
+    });
+
+    $("#croixparticipe").on('click', function() {
+        $("#participeinfos").css("display", "none");
+    });
+</script>
+
+
+</html>
