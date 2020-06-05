@@ -70,6 +70,10 @@
 
     <div id="commentcontribuer">
 
+        <div id="fermercommentcontribuer">
+        <p>X</p>
+        </div>
+        
         <p class="lignecentpourcent" style="margin-bottom: 20px;">En appuyant sur le bouton "Go !" vous ouvrirez une nouvelle page qui permettra d'éditer la carte.</p>
 
         <img src="images/01.png">
@@ -139,8 +143,8 @@
         $("#commentcontribuer").css("display", "block");
     });
 
-    $("#croixparticipe").on('click', function() {
-        $("#participeinfos").css("display", "none");
+    $("#fermercommentcontribuer").on('click', function() {
+        $("#commentcontribuer").css("display", "none");
     });
 </script>
 

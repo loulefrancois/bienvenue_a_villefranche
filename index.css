@@ -215,8 +215,21 @@ h1:hover {
     margin-right: 10px;
 }
 
+#fermercommentcontribuer {
+    font-family: 'Krona One', sans-serif;
+    display: inline;
+    float: right;
+    position: relative;
+    margin-bottom: 1em;
+}
+
 #fermercommentcontribuer p {
-    width: 10px;
+    display: contents;
+}
+
+#fermercommentcontribuer:hover p {
+    color: white;
+    cursor: pointer;
 }
 
 h3 {
