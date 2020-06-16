@@ -99,7 +99,6 @@ h1:hover {
     position: fixed;
     padding: 2em;
     width: 42%;
-    height: 35%;
     top: 32.5%;
     left: 29%;
     color: black;
@@ -138,11 +137,11 @@ h1:hover {
     display: inline;
     float: left;
     position: relative;
-    margin-left: 6.8em;
+    margin-left: 5.8em;
 }
 
 #aide {
-    width: 15.5em;
+    width: 16.5em;
 }
 
 #go p,
@@ -252,7 +251,6 @@ h3 {
     #participeinfos {
         padding: 2em;
         width: 45%;
-        height: 45%;
         top: 27.5%;
         left: 27.5%;
         color: black;
